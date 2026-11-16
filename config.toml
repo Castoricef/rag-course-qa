@@ -1,0 +1,16 @@
+# 切分与召回参数
+max_chars = 500      # 单块最大字符数
+overlap = 80         # 相邻块重叠字符数
+
+# 检索
+top_k = 3            # 召回条数
+min_score = 0.35     # 低于该相似度直接拒答（真实 embedding 下的经验值）
+min_score_offline = 0.2  # 离线哈希向量是词面匹配，分数整体偏低，单独放宽
+
+# 模型
+chat_model = "gpt-4o-mini"
+embedding_model = "text-embedding-3-small"
+temperature = 0.2
+
+# 无 API Key 时自动降级；也可手动置为 true 强制离线
+offline = false

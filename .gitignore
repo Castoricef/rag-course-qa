@@ -1,0 +1,11 @@
+# 环境与密钥
+.env
+
+# 索引与缓存
+data/index/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 原始资料（课件通常不便公开，按需自行放开）
+# data/raw/*
